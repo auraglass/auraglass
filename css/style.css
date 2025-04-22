@@ -1,0 +1,387 @@
+/* Fonts */
+@font-face {
+    font-family: nanomi;
+    src: url(Nanami-Thin.otf);
+}
+
+/* Elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-bottom: 390px;
+    min-height: 100vh;
+    position: relative;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-family: nanomi;
+    color: #014198;
+    text-align: center;
+    margin: 10px;
+    font-size:6vw;
+}
+
+h2 {
+    font-family: nanomi;
+}
+
+p {
+    font-size: larger;
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: #014198;
+}
+
+main {
+    margin: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    padding: 15px;
+    width: 100%;
+    height: 18vh;
+    bottom: 0;
+    position: absolute;
+    font-family: nanomi;
+    color: #014198;
+    text-align: center;
+    background-color: lightgrey;
+    border-top: #014198 1px solid;
+}
+
+div {
+    margin: 10px;
+    justify-content: center;
+    align-self: center;
+}
+
+a {
+    margin: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+    display: inline-block;
+    background-color: #014198;
+    width: 100%;
+}
+
+li {
+    display: inline-block;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 1vh;
+}
+    
+li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: nanomi;
+    font-size:xx-large;
+    padding: 5px;
+    width: 100%;
+    background-color: #014198;
+}
+    
+li a:hover {
+    transition: 0.8s;
+    background-color: white;
+    color: #014198;
+    border-radius: 3px;
+}
+
+/* Classes */
+.fullPicDiv {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.fullPic {
+    width: 100%;
+}
+
+.topLogo {
+    width: 30vw;
+    display: block;
+    float: right;
+}
+
+.bottomLogo {
+    width: 15vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainImg {
+    height: 35vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.smallMainImg {
+    height: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 3px;
+}
+
+.textBox {
+    color: white;
+    background-color: #014198;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Tables and Containers */
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+  
+table {
+    border-collapse: collapse;
+    border: none;
+}
+  
+th, td {
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+  
+.plainTable {
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Screen Sizes */
+@media only screen and (max-width: 768px) {
+
+    .topLogo {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50vw;
+    }
+
+    .fullPicDiv {
+        height: 20vh;
+    }
+
+    .flex-container {
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    ul {
+        text-align: center;  
+    }
+
+    li {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    li a {
+        width: 100%;
+        text-align: center;
+    }
+
+    body {
+        font-size: smaller;
+    }
+
+    footer {
+        height: 25vh;
+    }
+
+    .mainImg {
+        height: 50vw;
+    }
+
+    .smallMainImg {
+        height: 32vw;
+    }
+
+    p {
+        max-width: 95%;
+    }
+
+}
+
+@media only screen and (min-width: 769px) { 
+
+    body {
+        font-size: smaller;
+    }
+
+    .fullPicDiv {
+        height: 25vh;
+    }
+
+    .flex-container {
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        font-size: 3.5vw;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    footer {
+        height: 30vh;
+    }
+
+    .mainImg {
+        height: 27vh;
+    }
+
+    .smallMainImg {
+        height: 27vw;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .flex-container {
+        flex-wrap:wrap;
+    }
+
+    body {
+        font-size: medium;
+    }
+
+    .fullPicDiv {
+        height: 35vh;
+    }
+
+    footer {
+        height: 25vh;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .mainImg {
+        height: 33vh;
+    }
+
+    .smallMainImg {
+        height: 23vw;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .topLogo {
+        width: 25vw;
+    }
+
+    .fullPicDiv {
+        height: 42vh;
+    }
+
+    main {
+        width: 87%;
+    }
+
+    body {
+        font-size: large;
+    }
+
+    .flex-container {
+        flex-wrap:nowrap;
+    }
+
+    .mainImg {
+        height: 30vh;
+    }
+
+    .smallMainImg {
+        height: 24vw;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+
+    .topLogo {
+        width: 19vw;
+    }
+
+    .fullPicDiv {
+        height: 50vh;
+    }
+
+    h1 {
+        font-size: 3vw;
+    }
+
+    h2 {
+        font-size: 1.5vw;
+    }
+
+    main {
+        width: 70%;
+    }
+
+    .flex-container {
+        flex-wrap:nowrap;
+    }
+
+    .mainImg {
+        height: 33vh;
+    }
+
+    .smallMainImg {
+        height: 19vw;
+    }
+
+    p {
+        max-width: 70%;
+    }
+
+}
+
